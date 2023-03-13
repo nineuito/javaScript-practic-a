@@ -7,3 +7,18 @@ function isGetBeer(age) {
 }
 
 console.log(isGetBeer(18));
+
+function isHaveEnoughMoney(money) {
+    const priceBeer = 3.99;
+
+    if (money >= priceBeer) {
+        return 'У вас достаточно денег для покупки пива.';
+    } else {
+        return 'У вас не досточно денег для покупки пива.';
+    }
+}
+
+console.log(isHaveEnoughMoney(10));
+
+
+function isCanBuyBeer ()
