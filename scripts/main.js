@@ -21,4 +21,37 @@ function isHaveEnoughMoney(money) {
 console.log(isHaveEnoughMoney(10));
 
 
-function isCanBuyBeer ()
+function isCanBuyBeer(age, money, paymentMethod) {
+    const priceOfBeer = 4.99;
+    let result = '';
+
+    if (age >= 18) {
+        result += 'Твой возраст подходит, ';
+    } else {
+        result += 'Твой возраст не подходит, ';
+    }
+    
+    if (money >= priceOfBeer) {
+        result += 'у тебя достаточно денег ';
+    } else {
+        result += 'у тебя не достаточно денег для покупки ';
+    }
+
+    if (paymentMethod === 'card') {
+        result += 'и ты можешь расплатиться картой.'
+    } else if (paymentMethod === 'cash') {
+        result += 'и ты можешь расплатиться наличными.'
+    } else {
+        result += 'Выбери метод оплаты "card" или "cash"';
+    }
+
+
+    if (age === false || money === false) {
+        result = 'Ты не можешь купить пиво.'
+    }
+
+    return result;
+}
+
+
+console.log(isCanBuyBeer(3, 3, 'card'))
