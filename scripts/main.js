@@ -32,7 +32,7 @@ function isCanBuyBeer(age, money, paymentMethod) {
     }
     
     if (money >= priceOfBeer) {
-        result += 'у тебя достаточно денег ';
+        result += 'у тебя достаточно денег, ';
     } else {
         result += 'у тебя не достаточно денег для покупки ';
     }
@@ -42,11 +42,11 @@ function isCanBuyBeer(age, money, paymentMethod) {
     } else if (paymentMethod === 'cash') {
         result += 'и ты можешь расплатиться наличными.'
     } else {
-        result += 'Выбери метод оплаты "card" или "cash"';
+        result += 'выбери метод оплаты "card" или "cash"';
     }
 
 
-    if (age === false || money === false) {
+    if (age < 18 || money < priceOfBeer) {
         result = 'Ты не можешь купить пиво.'
     }
 
@@ -54,4 +54,4 @@ function isCanBuyBeer(age, money, paymentMethod) {
 }
 
 
-console.log(isCanBuyBeer(3, 3, 'card'))
+console.log(isCanBuyBeer(18, 5, 'd' ))
