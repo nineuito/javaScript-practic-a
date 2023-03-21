@@ -1,2 +1,3 @@
-const result = confirm('Вам есть 18 лет?');
-console.log(result);
+const name = 'Oleh';
+
+console.log('Привет ' + name);
