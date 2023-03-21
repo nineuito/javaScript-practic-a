@@ -10,9 +10,8 @@ body {
 /* Header */
 
 .header {
-    position: relative;
-    height: 100vh;
-}
+    position: relative; /* Make the parent element (header) positioned */
+  }
 
 .image-girl {
     width: 100%;
@@ -23,10 +22,22 @@ body {
 .header-list {
     display: flex;
     justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 4%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* Center the list both vertically and horizontally */
+    z-index: 1; /* Make sure the list is on top of the image */
+    color: rgb(2, 152, 152);
 }
 
 .header-item {
-    padding-right: 50px;
-    padding-left: 50px;
+    padding-right: 50%;
+    padding-left: 40%;
+    padding-top: 0%;
     list-style: none; 
+    font-size: 24px;
 }
+  
+  
+  
