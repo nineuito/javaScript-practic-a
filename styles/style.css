@@ -9,9 +9,16 @@ body {
 
 /* Header */
 
-.image-girl {
-    width: 1900px;
+.header {
+    position: relative;
+    height: 100vh;
 }
+
+.image-girl {
+    width: 100%;
+    height: 100%;
+}
+
 
 .header-list {
     display: flex;
