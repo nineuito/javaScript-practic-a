@@ -10,7 +10,7 @@ body {
 /* Header */
 
 .header {
-    position: relative; /* Make the parent element (header) positioned */
+    position: relative; 
   }
 
 .image-girl {
@@ -26,8 +26,8 @@ body {
     position: absolute;
     top: 4%;
     left: 50%;
-    transform: translate(-50%, -50%); /* Center the list both vertically and horizontally */
-    z-index: 1; /* Make sure the list is on top of the image */
+    transform: translate(-50%, -50%);
+    z-index: 1; 
     color: rgb(2, 152, 152);
 }
 
