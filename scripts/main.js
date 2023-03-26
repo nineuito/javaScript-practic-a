@@ -1,18 +1,6 @@
-const objectA = {
-    age:23,
-    tall: 'fat'    
+const myCity = {
+    city: 'hello',
+    age: 23
 }
 
-console.log(objectA)
-
-const copyObjectOfA = objectA;
-
-console.log(copyObjectOfA)
-
-copyObjectOfA.age = 25
-
-console.log(copyObjectOfA)
-
-copyObjectOfA.c = 'hello'
-
-console.log(copyObjectOfA)
+console.log(myCity.age)
