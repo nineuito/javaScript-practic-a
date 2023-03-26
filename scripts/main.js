@@ -1,6 +1,13 @@
-const myCity = {
-    city: 'hello',
-    age: 23
+let a 
+let b
+
+function myFn() {
+    let b
+    let a
+    a = true
+    b = 10
+    console.log(b)
+    console.log(a)
 }
 
-console.log(myCity.age)
+myFn()
