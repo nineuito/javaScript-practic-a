@@ -1,15 +1,11 @@
-const month = 2
+const infoAboutCity = {
+    name: 'New York',
+    country: 'USA',
+    position: 'East',
+    dateOfCreated: 1600,
+    isHasAccesToOcean: true
+}
 
-switch (month) {
-    case 12:
-        console.log('December')
-        break;
-    case 1:
-        console.log('January')
-        break;
-    case 2:
-        console.log('February')
-        break;
-    default:
-        console.log('Not a winter month')
+for (const key in infoAboutCity) {
+    console.log(key,infoAboutCity[key])
 }
