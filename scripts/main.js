@@ -1,18 +1,13 @@
-const userProfile = {
-    name: 'Oleh',
-    commentsQty: 21,
-    hasSegnedAgreement: false
-}
-
-const userInfo = () => {
-    const { name, commentsQty } = userProfile
-    if (!commentsQty) {
-        return `User ${name} has no comments`;
+const sumPositiveNumber = (a, b) => {
+    if (typeof a !== 'number' || typeof b !== 'number') {
+        return 'One of the arguments is not a number';
     }
 
-    return `User ${name} has ${commentsQty} comments`;
+    if (a <= 0 || b <= 0) {
+        return 'Numbers are not positive'
+    }
+
+    return a + b
 }
 
-console.log(userInfo(userProfile))
-
-console.log()
+console.log(sumPositiveNumber(-5,2))
