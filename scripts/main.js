@@ -1,15 +1,18 @@
-const myArray = [1, true, 'oleh']
+const userProfile = {
+    name: 'Oleh',
+    commentsQty: 21,
+    hasSegnedAgreement: false
+}
 
-console.log(myArray)
+const userInfo = () => {
+    const { name, commentsQty } = userProfile
+    if (!commentsQty) {
+        return `User ${name} has no comments`;
+    }
 
-console.log(myArray.length)
+    return `User ${name} has ${commentsQty} comments`;
+}
 
-const myArray2 = [1, true, 'oleh']
+console.log(userInfo(userProfile))
 
-console.log(myArray2.length)
-
-console.log(myArray === myArray2)
-
-const myArray3 = myArray;
-
-console.log(myArray === myArray3)
+console.log()
