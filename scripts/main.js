@@ -6,6 +6,10 @@ const infoAboutCity = {
     isHasAccesToOcean: true
 }
 
-for (const key in infoAboutCity) {
-    console.log(key,infoAboutCity[key])
-}
+Object.keys(infoAboutCity).forEach(key => {
+    console.log(key, infoAboutCity[key])
+})
+
+// for (const key in infoAboutCity) {
+//     console.log(key, infoAboutCity[key])
+// }
